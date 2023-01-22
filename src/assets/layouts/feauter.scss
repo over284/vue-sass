@@ -1,0 +1,37 @@
+.feauter {
+    background: $grey;
+    padding: 70px 0;
+    text-align: center;
+
+    &__icon {
+        width: 65px;
+        height: 90px;  
+    }
+    &__icon,
+    &__title {
+        padding-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__p{
+        font-size: 14px;
+    }
+
+    &__col{
+        &_pad{
+            width: 200px;
+            height: 250px;
+            padding: 0 20px;
+            background: $grey;
+            border: none;
+        }
+        &_pad:hover {
+            color: #CE242B; /* Цвет ссылки при наведении */ 
+            background: $grey2;
+           }
+    }
+}

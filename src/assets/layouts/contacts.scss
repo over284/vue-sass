@@ -1,0 +1,136 @@
+.contacts {
+
+
+    &__h2 {
+        margin-top: 40px;
+        text-align: center;
+		padding-bottom: 40px;
+		position: relative;
+		margin-bottom: 30px;
+        &:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 110px;
+			height: 3px;
+			background: #e2574c;
+		}
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+		padding-bottom: 50px;
+		font-weight: bold;
+        text-align: center;
+    }
+	.topic-text {
+		margin-left: 100px;
+		font-size: 23px;
+		font-weight: 600;
+		color: $dark;
+		margin-bottom: 10px;
+	  }
+	&__feedback{
+		margin-left: 100px;
+		display: flex;
+		padding-bottom: 50px;
+		
+		  .input-box {
+			height: 50px;
+			width: 400px;
+			margin-bottom: 20px;
+		  }
+		  .input-box input,
+			.input-box textarea {
+			height: 100%;
+			width: 100%;
+			border: none;
+			border-radius: 5px;
+			background: #f0f1f8;
+			padding: 0 20px;
+			}
+			.input-box textarea {
+			resize: none;
+			padding: 20px;
+			font-family: "Roboto", sans-serif;
+			}
+			
+			.message-box {
+				min-height: 110px;
+			}
+			.button {
+				display: inline-block;
+			}
+			
+			.button input[type="button"] {
+				color: #fff;
+				font-size: 18px;
+				background: $grey4;
+				outline: none;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 7px;
+				transition: 0.2s;
+			}
+			
+			.button input[type="button"]:hover {
+				background: $dark;
+			}
+	}
+	
+	&__rightlist{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 200px;
+	}
+	&__list {
+		
+		text-align: left;
+		font-weight: bold;
+        padding: 0;
+        list-style: none;
+        &_phones{
+            line-height : 0.5;
+        }
+    }
+	&__link{
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        &_red {
+            color: $red;
+        }
+        &_underline {
+            text-decoration: underline;
+        }
+        &:hover{
+            color: rgb(189, 189, 189);
+        }
+    }
+    &__icons {
+		
+		text-align: center;
+		left: auto;
+		right: auto;
+		padding-top: 30px;
+		padding-bottom: 50px;
+		a {
+			width: 45px;
+			height: 45px;
+			text-align: center;
+			border: 1px solid $greyLight;
+			border-radius: 50%;
+			margin-right: 10px;
+			display: inline-block;
+		}
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	
+  
+}
